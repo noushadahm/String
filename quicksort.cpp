@@ -32,10 +32,11 @@ void quicksort(int arr[], int low, int high){
 }
 int main(){
 	
-   int arr[]={5,4,3,2,1};
+   int arr[]={5,40,39,2,1};//input
    quicksort(arr,0,4);
    for(int i=0; i<5; i++){
     cout<<arr[i]<<" ";	
+    
    }
    return 0;
 }
