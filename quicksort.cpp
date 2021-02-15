@@ -25,16 +25,16 @@ int partition(int ar[], int low, int high){
 void quicksort(int arr[], int low, int high){
       if(low<high){
       
-      int pi=partition(arr, low ,high);
+      int pi=partition(arr, low ,high); 
       quicksort(arr, low, pi-1);
       quicksort(arr, pi+1, high);
 }
 }
 int main(){
 	
-   int arr[]={5,40,39,2,1};//input
+   int arr[]={5,40,39,2,1,10,40,83};//input
    quicksort(arr,0,4);
-   for(int i=0; i<5; i++){
+   for(int i=0; i<8; i++){
     cout<<arr[i]<<" ";	
     
    }
